@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Pixel Planet Gen</title>
+  <style>
+    html,
+    body {
+      height: 100%;
+    }
+
+    body {
+      margin: 0;
+      padding: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background-color: #1a1c2c;
+    }
+
+    .controls {
+      color: white;
+      position: absolute;
+      top: 5px;
+      left: 5px;
+    }
+  </style>
+</head>
+
+<body>
+  <canvas width="500" height="500"></canvas>
+  <div class="controls">
+    <input type="button" id="random_btn" value="Random"></input>
+    <label>Seed : </label><input id="seed_field" type="text" value=""></input>
+    <label>Pixel size : </label><input id="pixelSize_field" type="number" min="1" max="15" value="5"></input>
+  </div>
+  <script type="text/javascript" src="src/index.js"></script>
+</body>
+
+</html>
